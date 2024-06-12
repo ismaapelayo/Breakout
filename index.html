@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Breakout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Selecciona el Nivel</h1>
+        <div id="levelSelection">
+            <!-- Los niveles se generan dinámicamente en el JS -->
+        </div>
+    </div>
+    <div id="gameContainer">
+        <div id="livesCounter"></div>
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+    </div>
+    <div id="gameOver" style="display: none;">
+        <h2>GAME OVER :</h2>
+        <button onclick="retryGame()">Retry</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
